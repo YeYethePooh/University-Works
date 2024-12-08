@@ -1,0 +1,588 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Dec  7 17:27:02 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 513.684 ; gain = 197.797
+Command: read_checkpoint -auto_incremental -incremental {D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/utils_1/imports/synth_1/system.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/utils_1/imports/synth_1/system.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2944
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1369.531 ; gain = 448.715
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'seg_output' is not allowed [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/HexTo7SegmentDecoder.v:19]
+WARNING: [Synth 8-10929] literal value 'he010 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1134]
+WARNING: [Synth 8-10929] literal value 'he011 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1135]
+WARNING: [Synth 8-10929] literal value 'he012 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1136]
+WARNING: [Synth 8-10929] literal value 'he013 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1137]
+WARNING: [Synth 8-10929] literal value 'he014 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1138]
+WARNING: [Synth 8-10929] literal value 'he015 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1139]
+WARNING: [Synth 8-10929] literal value 'he016 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1140]
+WARNING: [Synth 8-10929] literal value 'he017 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1141]
+WARNING: [Synth 8-10929] literal value 'he018 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1142]
+WARNING: [Synth 8-10929] literal value 'he019 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1143]
+WARNING: [Synth 8-10929] literal value 'he01a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1144]
+WARNING: [Synth 8-10929] literal value 'he01b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1145]
+WARNING: [Synth 8-10929] literal value 'he01c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1146]
+WARNING: [Synth 8-10929] literal value 'he01d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1147]
+WARNING: [Synth 8-10929] literal value 'he01e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1148]
+WARNING: [Synth 8-10929] literal value 'he01f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1149]
+WARNING: [Synth 8-10929] literal value 'he020 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1152]
+WARNING: [Synth 8-10929] literal value 'he021 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1153]
+WARNING: [Synth 8-10929] literal value 'he022 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1154]
+WARNING: [Synth 8-10929] literal value 'he023 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1155]
+WARNING: [Synth 8-10929] literal value 'he024 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1156]
+WARNING: [Synth 8-10929] literal value 'he025 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1157]
+WARNING: [Synth 8-10929] literal value 'he026 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1158]
+WARNING: [Synth 8-10929] literal value 'he027 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1159]
+WARNING: [Synth 8-10929] literal value 'he028 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1160]
+WARNING: [Synth 8-10929] literal value 'he029 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1161]
+WARNING: [Synth 8-10929] literal value 'he02a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1162]
+WARNING: [Synth 8-10929] literal value 'he02b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1163]
+WARNING: [Synth 8-10929] literal value 'he02c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1164]
+WARNING: [Synth 8-10929] literal value 'he02d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1165]
+WARNING: [Synth 8-10929] literal value 'he02e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1166]
+WARNING: [Synth 8-10929] literal value 'he02f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1167]
+WARNING: [Synth 8-10929] literal value 'he030 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1170]
+WARNING: [Synth 8-10929] literal value 'he031 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1171]
+WARNING: [Synth 8-10929] literal value 'he032 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1172]
+WARNING: [Synth 8-10929] literal value 'he033 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1173]
+WARNING: [Synth 8-10929] literal value 'he034 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1174]
+WARNING: [Synth 8-10929] literal value 'he035 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1175]
+WARNING: [Synth 8-10929] literal value 'he036 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1176]
+WARNING: [Synth 8-10929] literal value 'he037 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1177]
+WARNING: [Synth 8-10929] literal value 'he038 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1178]
+WARNING: [Synth 8-10929] literal value 'he039 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1179]
+WARNING: [Synth 8-10929] literal value 'he03a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1180]
+WARNING: [Synth 8-10929] literal value 'he03b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1181]
+WARNING: [Synth 8-10929] literal value 'he03c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1182]
+WARNING: [Synth 8-10929] literal value 'he03d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1183]
+WARNING: [Synth 8-10929] literal value 'he03e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1184]
+WARNING: [Synth 8-10929] literal value 'he03f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1185]
+WARNING: [Synth 8-10929] literal value 'he040 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1188]
+WARNING: [Synth 8-10929] literal value 'he041 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1189]
+WARNING: [Synth 8-10929] literal value 'he042 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1190]
+WARNING: [Synth 8-10929] literal value 'he043 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1191]
+WARNING: [Synth 8-10929] literal value 'he044 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1192]
+WARNING: [Synth 8-10929] literal value 'he045 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1193]
+WARNING: [Synth 8-10929] literal value 'he046 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1194]
+WARNING: [Synth 8-10929] literal value 'he047 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1195]
+WARNING: [Synth 8-10929] literal value 'he048 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1196]
+WARNING: [Synth 8-10929] literal value 'he049 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1197]
+WARNING: [Synth 8-10929] literal value 'he04a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1198]
+WARNING: [Synth 8-10929] literal value 'he04b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1199]
+WARNING: [Synth 8-10929] literal value 'he04c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1200]
+WARNING: [Synth 8-10929] literal value 'he04d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1201]
+WARNING: [Synth 8-10929] literal value 'he04e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1202]
+WARNING: [Synth 8-10929] literal value 'he04f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1203]
+WARNING: [Synth 8-10929] literal value 'he050 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1206]
+WARNING: [Synth 8-10929] literal value 'he051 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1207]
+WARNING: [Synth 8-10929] literal value 'he052 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1208]
+WARNING: [Synth 8-10929] literal value 'he053 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1209]
+WARNING: [Synth 8-10929] literal value 'he054 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1210]
+WARNING: [Synth 8-10929] literal value 'he055 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1211]
+WARNING: [Synth 8-10929] literal value 'he056 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1212]
+WARNING: [Synth 8-10929] literal value 'he057 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1213]
+WARNING: [Synth 8-10929] literal value 'he058 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1214]
+WARNING: [Synth 8-10929] literal value 'he059 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1215]
+WARNING: [Synth 8-10929] literal value 'he05a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1216]
+WARNING: [Synth 8-10929] literal value 'he05b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1217]
+WARNING: [Synth 8-10929] literal value 'he05c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1218]
+WARNING: [Synth 8-10929] literal value 'he05d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1219]
+WARNING: [Synth 8-10929] literal value 'he05e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1220]
+WARNING: [Synth 8-10929] literal value 'he05f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1221]
+WARNING: [Synth 8-10929] literal value 'he060 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1224]
+WARNING: [Synth 8-10929] literal value 'he061 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1225]
+WARNING: [Synth 8-10929] literal value 'he062 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1226]
+WARNING: [Synth 8-10929] literal value 'he063 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1227]
+WARNING: [Synth 8-10929] literal value 'he064 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1228]
+WARNING: [Synth 8-10929] literal value 'he065 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1229]
+WARNING: [Synth 8-10929] literal value 'he066 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1230]
+WARNING: [Synth 8-10929] literal value 'he067 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1231]
+WARNING: [Synth 8-10929] literal value 'he068 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1232]
+WARNING: [Synth 8-10929] literal value 'he069 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1233]
+WARNING: [Synth 8-10929] literal value 'he06a truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1234]
+WARNING: [Synth 8-10929] literal value 'he06b truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1235]
+WARNING: [Synth 8-10929] literal value 'he06c truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1236]
+WARNING: [Synth 8-10929] literal value 'he06d truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1237]
+WARNING: [Synth 8-10929] literal value 'he06e truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1238]
+WARNING: [Synth 8-10929] literal value 'he06f truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1239]
+WARNING: [Synth 8-10929] literal value 'he070 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1242]
+WARNING: [Synth 8-10929] literal value 'he071 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1243]
+WARNING: [Synth 8-10929] literal value 'he072 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1244]
+WARNING: [Synth 8-10929] literal value 'he073 truncated to fit in 11 bits [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1245]
+INFO: [Common 17-14] Message 'Synth 8-10929' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-9400] empty statement in sequential block [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:135]
+WARNING: [Synth 8-9400] empty statement in sequential block [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:150]
+WARNING: [Synth 8-6901] identifier 'current_char' is used before its declaration [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:56]
+INFO: [Synth 8-6157] synthesizing module 'system' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/ClockDiv.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/ClockDiv.v:4]
+INFO: [Synth 8-6157] synthesizing module 'QuadSevenSegmentDisplay' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:8]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:27]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:27]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:27]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:27]
+INFO: [Synth 8-6157] synthesizing module 'HexTo7SegmentDecoder' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/HexTo7SegmentDecoder.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo7SegmentDecoder' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/HexTo7SegmentDecoder.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'QuadSevenSegmentDisplay' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/QuadSevenSegmentDisplay.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1]
+WARNING: [Synth 8-151] case item 11'b01100000000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100000111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100001111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100010111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100011111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100100111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100101111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100110111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01100111111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101000111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101001111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101010111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011100 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011101 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011110 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101011111 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101100000 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101100001 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101100010 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+WARNING: [Synth 8-151] case item 11'b01101100011 is unreachable [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:15]
+INFO: [Common 17-14] Message 'Synth 8-151' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/nac/hw-syn-lab-final-project/final_project/final_project.srcs/sources_1/new/ascii_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:1]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:69]
+WARNING: [Synth 8-3848] Net JA in module/entity system does not have driver. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:3]
+WARNING: [Synth 8-7129] Port JA[0] in module system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JB[0] in module system is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1494.340 ; gain = 573.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1494.340 ; gain = 573.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1494.340 ; gain = 573.523
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1494.340 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsRx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:267]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:267]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsRx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsTx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsTx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/src/Basys3-Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1592.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1592.398 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 30    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design system has port dp driven by constant 0
+WARNING: [Synth 8-7129] Port JA[0] in module system is either unconnected or has no load
+WARNING: [Synth 8-7129] Port JB[0] in module system is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|vga         | my_ascii_rom/addr_reg_reg | 2048x8        | Block RAM      | 
++------------+---------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance vga_display/my_ascii_rom/addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |    11|
+|4     |LUT2     |    40|
+|5     |LUT3     |     9|
+|6     |LUT4     |    21|
+|7     |LUT5     |    57|
+|8     |LUT6     |   122|
+|9     |MUXF7    |    29|
+|10    |MUXF8    |    14|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |    59|
+|13    |FDPE     |     2|
+|14    |FDRE     |   236|
+|15    |IBUF     |    11|
+|16    |OBUF     |    26|
+|17    |OBUFT    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1592.398 ; gain = 573.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1592.398 ; gain = 671.582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1592.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1592.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e1d9b5d0
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 265 Warnings, 20 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1592.398 ; gain = 1072.414
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1592.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.runs/synth_1/system.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 17:28:00 2024...
