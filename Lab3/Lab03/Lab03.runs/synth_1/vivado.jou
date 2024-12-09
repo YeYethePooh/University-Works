@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Sep 10 14:23:59 2024
+# Process ID: 16408
+# Current directory: D:/Projects/Computer projects/HardwareSynthesisLab/Lab3/Lab03/Lab03.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: D:/Projects/Computer projects/HardwareSynthesisLab/Lab3/Lab03/Lab03.runs/synth_1/system.vds
+# Journal file: D:/Projects/Computer projects/HardwareSynthesisLab/Lab3/Lab03/Lab03.runs/synth_1\vivado.jou
+# Running On        :YeYeTheLaptop
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+# CPU Frequency     :2208 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :25613 MB
+# Swap memory       :3758 MB
+# Total Virtual     :29371 MB
+# Available Virtual :15329 MB
+#-----------------------------------------------------------
+source system.tcl -notrace

@@ -1,0 +1,388 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  9 07:07:48 2024
+# Process ID: 14376
+# Current directory: D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.runs/synth_1/system.vds
+# Journal file: D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.runs/synth_1\vivado.jou
+# Running On        :YeYeTheLaptop
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+# CPU Frequency     :2208 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :25613 MB
+# Swap memory       :3758 MB
+# Total Virtual     :29371 MB
+# Available Virtual :6617 MB
+#-----------------------------------------------------------
+source system.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 513.145 ; gain = 199.922
+Command: read_checkpoint -auto_incremental -incremental {D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/utils_1/imports/synth_1/system.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/utils_1/imports/synth_1/system.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14652
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1369.781 ; gain = 449.285
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'seg_output' is not allowed [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/hexTo7SegmentDecoder.v:15]
+WARNING: [Synth 8-9400] empty statement in sequential block [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:142]
+WARNING: [Synth 8-9400] empty statement in sequential block [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:157]
+WARNING: [Synth 8-6901] identifier 'current_char' is used before its declaration [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:56]
+INFO: [Synth 8-11241] undeclared symbol 'btnC_debounced', assumed default net type 'wire' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:41]
+INFO: [Synth 8-11241] undeclared symbol 'btnU_debounced', assumed default net type 'wire' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:55]
+INFO: [Synth 8-6157] synthesizing module 'system' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clockDivDisplay' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/clockDivDisplay.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivDisplay' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/clockDivDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSegmentDisplay' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:3]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:22]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:22]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:22]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hexTo7SegmentDecoder' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/hexTo7SegmentDecoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hexTo7SegmentDecoder' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/hexTo7SegmentDecoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSegmentDisplay' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/quadSevenSegmentDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Debouncer' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/imports/src/Debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Dflipflop' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/imports/src/Dflipflop.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Dflipflop' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/imports/src/Dflipflop.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Debouncer' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/imports/src/Debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudClk' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/baudClk.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'baudClk' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/baudClk.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_rx.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_tx.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_tx.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart_tx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/font_rom.v:3]
+WARNING: [Synth 8-11581] system task call 'readmemd' not supported [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/font_rom.v:15]
+INFO: [Synth 8-3876] $readmem data file 'font_thai.mem' is read successfully [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/font_rom.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/font_rom.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/system.v:1]
+WARNING: [Synth 8-6014] Unused sequential element data_in_reg was removed.  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/uart.v:45]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[2][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[1][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][9] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][8] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][7] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][6] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][5] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][4] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][3] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][2] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][1] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+WARNING: [Synth 8-7137] Register char_buffer_reg[0][0] in module vga has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/sources_1/new/vga.v:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1491.160 ; gain = 570.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1491.160 ; gain = 570.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1491.160 ; gain = 570.664
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1491.160 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsRx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:267]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:267]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsRx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsTx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:269]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsTx'. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.srcs/constrs_1/imports/src/Basys3-Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1529.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1529.762 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 36    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design system has port dp driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    32|
+|3     |LUT1   |    17|
+|4     |LUT2   |    49|
+|5     |LUT3   |    16|
+|6     |LUT4   |    35|
+|7     |LUT5   |    24|
+|8     |LUT6   |    59|
+|9     |FDCE   |    51|
+|10    |FDPE   |     3|
+|11    |FDRE   |   112|
+|12    |IBUF   |    12|
+|13    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1529.762 ; gain = 570.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1529.762 ; gain = 609.266
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1529.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1529.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b3f0bba5
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 62 Warnings, 20 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1529.762 ; gain = 1009.172
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1529.762 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/Computer projects/HardwareSynthesisLab/Project_UART_VGA/from_scratch/from_scratch.runs/synth_1/system.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 07:08:47 2024...
